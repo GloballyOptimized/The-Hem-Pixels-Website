@@ -1,0 +1,9 @@
+import os
+
+base = 'D:\Hemant Website\The_Hem_Pixels\static\images\\'
+all_folder_files = os.listdir(base)
+
+index = 1
+for i in all_folder_files:
+    os.rename(base+i,base+'image'+str(index))
+    index+=1
